@@ -56,10 +56,6 @@ apples.forEach(function(apple){
       apple.y=RandomCoordonates();
 
       snake.push({x: last_segment.x-direction.x, y:last_segment.y-direction.y});
-
-
-
-
       score += 10;
     }
 
