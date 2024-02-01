@@ -74,7 +74,18 @@ function changeDirection(event) {
         direction = {x: -1, y: 0};
       }
       break;
+    case 81: // q key
+      if (direction.x !== 1) {
+        direction = {x: -1, y: 0};
+      }
+      break;
     case 38: // up arrow
+      if (direction.y !== 1) {
+        direction = {x: 0, y: -1};
+      }
+      break;
+    
+    case 90: // z key
       if (direction.y !== 1) {
         direction = {x: 0, y: -1};
       }
@@ -84,7 +95,17 @@ function changeDirection(event) {
         direction = {x: 1, y: 0};
       }
       break;
+    case 68: // d key
+      if (direction.x !== -1) {
+        direction = {x: 1, y: 0};
+      }
+      break;
     case 40: // down arrow
+      if (direction.y !== -1) {
+        direction = {x: 0, y: 1};
+      }
+      break;
+     case 83: // s key
       if (direction.y !== -1) {
         direction = {x: 0, y: 1};
       }
